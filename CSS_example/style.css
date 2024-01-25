@@ -1,0 +1,10 @@
+p.styledFont {
+    font-size: medium;    
+    color: green;
+}
+#styledImage {
+        border: 10px solid orange;
+  border-radius: 4px;
+  background-color: rgb(104, 104, 220);
+
+}
