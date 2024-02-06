@@ -1,48 +1,119 @@
 <!DOCTYPE html>
-<!-- this doctype tag tells the browser that this file is of type HTML -->
 <html lang="en">
-    <!-- this html tag tells the browser that the CODE is of type HTML -->
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- this sets up the web page to be mobile friendly. (first) mobile responsive -->
-        <title>Sylvie Soulet's Web Site</title>
-               <!-- the title tag populates the title section of a tab in a browser -->
-    </head>
-    <!-- the head tags tells the browser that the code inside it needs to be executed first -->
-    <body>
-            <!-- the body tag contains the content that is physically shown in the web browser itself -->
-        
-        <div class="header">
-            <header><h1>Student Bio</h1></header> 
-        </div>          
-        <div class="container">        
-                    <h2>Sylvannia (Sylvie) Soulet</h2>
-                    
-                    <h2 class="h2-2">Contact Info</h2>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvannia Soulet // Portfolio</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+
+<body>
+
+    <!-- Title and Nav Links -->
+    <header>
+        <h2>Sylvannia Soulet</h2>
+        <nav>
+            <ul>
+                <li id="first-link"><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <!-- Insert background and text "WELCOME!" in right bottom corner-->
+        <div id="subtitle">
+            <img class="bio_image" src="./2023_Headshot.jpg">
+            <h2>WELCOME!</h2>
         </div>
-                 
-    <div class="container"> 
-        <img src="2023_Headshot.jpg" alt="Headshot of Sylvie Soulet" height= auto id="bio-image">  
-       
-        <p id="main-bio">Sylvie Soul is a dual American/Canadian citizen living in Toronto, Ontario. When not 
-            deliberating over plot-holes and negotiating extra-lean word counts, Sylvie can be found in 
-            small-city Toronto, enjoying time with her fiancé and daughter, indulging in cheap pho, and 
-            waxing poetic about the 16-bit era of video games. You can follow her progress at
-            <a href="https://sylviesoul.com">https://sylviesoul.com</a>.</p>
-             
-           <ul id="contact-info">
-                <li><a href="mailto:sylvsoul@gmail.com">Email</a></li>
-               <li><a href="https://github.com/sylvsoul">Github</a></li>
-                <li><a href="https://sylviesoul.com/portfolio/">Portfolio</a></li>
-            </ul></span></div>
+
+    </section>
+
+    <!-- Main Content -->
+    <main>
         
-     
-           
-            
-            
+        <!-- About Me -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Sylvie Soul is a dual American/Canadian citizen living in Toronto, Ontario. When not deliberating over plot-holes and negotiating extra-lean word counts, Sylvie can be found in small-city Toronto, enjoying time with her fiancé and daughter, indulging in cheap pho, and waxing poetic about the 16-bit era of video games. You can follow her progress at https://sylviesoul.com.
+                <br>
+                           </p>
+        </section>
+
+        <!-- project applications -->
+        <section id="work">
+
+            <h2>Work</h2>
+            <div id="work-projects">
+
+                <!-- links to applications -->
+                <a href="https://sailorhelga.blogspot.com/" class="first-app surf-report">
+                    <div>
+                        <h3>Surf Report</h3>
+                        <span>MERN Stack</span>
+                    </div>
+                </a>
     
-        <a href="CSS_example/index.html">Link to my CSS Example Page</a>
-    </body>
+                <a href="https://www.youtube.com/shorts/yVJAvk2fIcg" class="other-apps LED">
+                    <div>
+                        <h3>LED Wall</h3>
+                        <span>Node/IoT</span>
+                
+                    </div>
+                </a>
+    
+                <a href="https://tenor.com/en-GB/view/meonly-gif-19710542" class="other-apps calculator">
+                    <div>
+                        <h3>Calculator</h3>
+                        <span>React/JavaScript/CSS</span>
+                    </div>                
+                </a>
+    
+                <a href="https://www.youtube.com/watch?v=ElfZUgSODQQ" class="other-apps puzzle">
+                    <div>
+                        <h3>Pastel Puzzle</h3>
+                        <span>MERN Stack</span>
+                    </div>
+                </a>
+    
+                <a href="https://www.youtube.com/watch?v=8fGFjoeyc6I" class="other-apps buddy">
+                    <div>
+                        <h3>Run Buddy</h3>
+                        <span>HTML/CSS</span>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+        
+        <!-- contact section -->
+        <section id="contact-me">
+            <h2>Contact Me</h2>
+            <div id="contacts">
+                <address>
+                    <!-- clicking on number will make a call using device -->
+                    <a href="tel:555.555.5555">555.5555.5555</a>
+                    <!-- clicking on email will make an email using device's default mail app -->
+                    <a href="mailto: info@sylviesoul.com">Sylvannia Soulet</a>
+                    <!-- link to github (leaving last three links blank) -->
+                    <a href="https://sylvsoul.github.io/my_first_repository/" target="_blank">Github</a>
+                    <!-- link to twitter -->
+                    <a href="https://www.linkedin.com/in/sylvannia-soulet-8b823452/">LinkedIn</a>
+                    <!-- link to spotify -->
+                    <a href="https://www.youtube.com/@sylviesoul">Youtube</a>
+                </address>
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
 </html>
