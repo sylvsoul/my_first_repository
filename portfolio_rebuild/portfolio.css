@@ -1,0 +1,272 @@
+:root {
+    --dark-gray: rgba(49,52,61);
+    --teal: rgba(149, 202, 204);
+    --subtitle: rgba(113, 140, 163);
+}
+
+body {
+    font-family: 'Lucida Sans', 'Century Gothic', 'Lucida Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header and nav */
+header {
+    display: flex; 
+    flex-direction: row;
+    background-color: var(--dark-gray);
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+h1 {
+    background-color: var(--teal);
+    color: var(--dark-gray);
+    font-size: 40px; 
+   
+    padding: 5px 4px 5px 10%; 
+    
+}
+h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    text-decoration: underline teal;
+    text-underline-offset: 8px;
+    border-bottom: teal;
+    
+       
+    /* -- add extra length to each side -- */
+    
+    
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px 5px 10px;
+    color: var(--teal);
+    font-size: 22px;
+    
+}
+
+/* insert avatar before nav links */
+#first-link::before {
+    content: "";
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: -8px;
+    background: url(../images/avatar.webp);
+    background-size: 40px 40px;
+}
+
+/* hero banner section - image */
+.hero-banner {
+    background: var(--subtitle);
+    background-image: url(./hero_banner.jpg);
+    
+    background-size: contain;
+    
+    
+    
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    margin: 0;
+}
+
+#subtitle {
+    flex: 0 0 80%;
+    width: 100%;
+    padding: 2%;
+    text-align: right;
+}
+
+#subtitle h2 {
+    background: var(--teal);
+    display: inline;
+    color: var(--subtitle);
+    font-size: 40px;
+    text-align: right;
+    flex: 0 0 20%;
+}
+
+/* Start of main content */
+
+main {
+    margin: 20px 10% 10px 10%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 8px 0;
+}
+
+main h2 {
+    color: var(--subtitle);
+    font-size: 40px;
+    text-align: right;
+    border-right: 5px solid var(--subtitle);
+    padding-right: 15px;
+    flex: 0 0 20%;
+}
+
+/* overall format of main section */
+
+section p,
+#work-projects,
+#contacts {
+    flex: 0 0 75%;
+}
+
+/* work projects section */
+#work-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#work-projects div {
+    flex: display;
+    background: var(--teal);
+    color: black;
+}
+
+#work-projects a {
+    border: 5px solid var(--teal);
+}
+
+/* applications formatting */
+.first-app,
+.other-apps {
+    margin: 5px;
+}
+
+/* first app is bigger in size */
+.first-app {
+    background-image: url(./surf_report.jpg);
+    background-size: 100%;
+    background-repeat: repeat no-repeat;
+    flex-basis: 100%;
+    min-height: 35vh;
+}
+
+/* other apps are smaller in size */
+.other-apps {
+    flex-basis: calc(50% - 10px);
+    }
+
+/* background images of apps 2-5 */
+.LED {
+    background-image: url(./led.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.calculator {
+    background-image: url(./calculator.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.puzzle {
+    background-image: url(./pastel_puzzle.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.buddy {
+    background-image: url(./run_buddy.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+/* address element with contacts */
+address {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-style: normal;
+    height: 100%;
+    display: flex;
+    text-decoration: underline teal;
+    text-underline-offset: 8px;
+    border-bottom: teal;
+}
+
+/* remove default properties of links */
+a, a:link, a:visited, a:focus, a:hover, a:active{
+    
+    text-decoration:none;
+    color: inherit;
+}
+
+/* media queries */
+
+/* max width 980px */
+@media screen and (max-width: 980px) {
+    header {
+        flex-direction: column;
+        
+        padding: 0 0 5px 0;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    h1 {
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    main h2 {
+        border-right: 0;
+        border-bottom: 3px solid var(--subtitle);
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    nav ul {
+        margin: 20px 0 0 0;
+    }
+
+    .hero-banner {
+        margin: 0;
+    }
+}
+
+/* max width 768px */
+@media screen and (max-width: 768px) {
+    
+    address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #subtitle {
+        text-align: center;
+    }
+
+    .other-apps {
+        flex-basis: calc(100%);
+        min-height: 300px;
+    }
+}
