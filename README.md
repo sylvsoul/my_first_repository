@@ -11,6 +11,6 @@ This is the updated version of my portfolio page.
 
 DEPLOYED LINKS
 Sylvannia Soulet Portfolio
-https://sylvsoul.github.io/my_first_repository/
+https://sylvsoul.github.io/my_first_repository/<br>
 Github
-[<enter link here>](https://github.com/sylvsoul/my_first_repository)https://github.com/sylvsoul/my_first_repository
+[<enter link here>](https://github.com/sylvsoul/my_first_repository)https://github.com/sylvsoul/my_first_repository<br>
